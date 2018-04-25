@@ -31,6 +31,7 @@ Clone or download this repo and run `index.html` in any web browser.
  - [Notepad++](https://notepad-plus-plus.org/) - My favorite text-editor.
  - [Thai Sans Neue](http://www.f0nt.com/release/thaisans-neue-1-0/) - Simple but magnificent font.
  - [Adobe Color CC](https://color.adobe.com) - Provided me a color scheme for placeholder header/footer.
+ - [wrapText function](https://github.com/phwt/enewsletter-generator) - Function used for text-wrapping in canvas.
 
 ## Release History
  - 2.0 (25-04-18)
