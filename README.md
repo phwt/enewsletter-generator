@@ -35,6 +35,9 @@ Clone or download this repo and run `index.html` in any web browser.
          - Change base font to Thai Sans Neue.
          - Remove option to view current issue. (As no longer needed)
      - Update jQuery CDN to version 3.3.1
+ > Current Build
+ ------
+ > Legacy Version
  - 1.3 (xx-xx-18)
  	- Add auto line count fill when preview.
     - Remove line count selection limit. (Unlimited lines now possible)
