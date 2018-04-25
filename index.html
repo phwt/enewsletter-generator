@@ -10,12 +10,11 @@
 		}
 	</style>
 	</head>
-    <body style="font-family:Browallia New;font-size:20px;">	<iframe src="" id="ifm" style="display:none"></iframe>
+    <body style="font-family:Browallia New;font-size:20px;">
 		<form id="sfl">
 			<p>&nbsp;➀ Fill title and Issue number</p>
 			Title <input type="text" id="title" onkeyup='saveValue(this);'></input>
 			Issue <input type="text" id="issue_num" size="4" value="" onkeyup='saveValue(this);'></input>
-			<button id="cri" type='button' onclick="showcur()">Current Issue</button>
 			<br>
 			<hr>
 			<p>&nbsp;➁ Fill content select lines and save info</p>
@@ -53,21 +52,6 @@
 		document.getElementById("l1").value = getSavedValue("l1");
 		document.getElementById("sel_v").value = getSavedValue("sel_v");
 		
-		
-		function showcur(){
-			var txt = document.getElementById("cri");
-			var current_issue = document.getElementById('ifm').contentWindow.ele;
-			if (current_issue == undefined){
-				txt.innerHTML = "Please Wait...";
-				var site = "http://www.sd.ac.th/main/?page_id=3699";
-				document.getElementById("ifm").src = site;
-				txt.disabled = true;
-				setTimeout(function(){ txt.disabled = false;txt.innerHTML = "Try Again"; }, 2000);
-			}
-			else {
-				txt.innerHTML = current_issue;
-			}
-		};		
 		var l1 = "";
 		var length = 60;
 		var flength;
