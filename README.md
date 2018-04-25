@@ -12,10 +12,11 @@ Clone or download this repo and run `index.html` in any web browser.
 
 ## To-do list
  - [X] Create a project
- - [X] Finish the project
- - [X] Add text-wrapper
- - [X] Add line count
- - [X] Add custom line number
+ - [X] Finish the (working version) project
+ - [X] Legacy Version to do:
+     - [X] Add text-wrapper
+     - [X] Add line count
+     - [X] Add custom line number
  - [ ] Change all script to jQuery format
  - [ ] Update UI (I'm think of using bootstrap)
  - [ ] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)
