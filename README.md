@@ -17,8 +17,11 @@ Clone or download this repo and run `index.html` in any web browser.
      - [X] Add text-wrapper
      - [X] Add line count
      - [X] Add custom line number
+ - [ ] Fullly Migration from Legacy Version
+     - [X] Remove all non-project related content.
+     - [ ] Replace some content.
  - [ ] Change all script to jQuery format
- - [ ] Update UI (I'm think of using bootstrap)
+ - [ ] Update UI (I'm thinking of using bootstrap)
  - [ ] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)
  - [ ] Make variable name easier to understand
  - [ ] Add Comment to explain script
@@ -27,6 +30,7 @@ Clone or download this repo and run `index.html` in any web browser.
  - [jQuery](https://jquery.com/) - JavaScript library that made my life easier.
  - [Notepad++](https://notepad-plus-plus.org/) - My favorite text-editor.
  - [Thai Sans Neue](http://www.f0nt.com/release/thaisans-neue-1-0/) - Simple but magnificent font.
+ - [Adobe Color CC](https://color.adobe.com/) - Provide me a color scheme for placeholder header/footer.
 
 ## Release History
  - 2.0 (25-04-18)
