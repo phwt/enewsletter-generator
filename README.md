@@ -22,7 +22,7 @@ Clone or download this repo and run `index.html` in any web browser.
      - [X] Remove all non-project releated file
      - [ ] Replace some contents
  - [ ] Update UI (I'm thinking of using bootstrap)
- - [ ] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)
+ - [X] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)
  - [ ] Make variable name easier to understand
  - [ ] Add Comment to explain script
 
