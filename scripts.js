@@ -134,9 +134,9 @@ function getSavedValue(v) {
     return localStorage.getItem(v);
 }
 
-var f_input = document.getElementById('f_input');
-f_input.disabled = true;
-f_input.addEventListener('change', showp);
+$("#btn-save").prop('disabled', true);
+$("#f_input").prop('disabled', true);
+$("#f_input").change(showp);
 
 
 function prtxt() {
@@ -175,6 +175,9 @@ function savei() {
 }
 
 function showp(e) {
+    $('#btn-save').prop('disabled', false);
+    $('#btn-save').removeClass("disabled");
+    
     var title_r = document.getElementById("title").value;
     var isn_r = document.getElementById("issue_num").value;
 
