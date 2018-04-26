@@ -179,6 +179,7 @@ function savei() {
     theight = flength + 106;
 }
 
+var placeholder;
 function showp(e) {
     $('#btn-save').prop('disabled', false);
     $('#btn-save').removeClass("disabled");
@@ -193,7 +194,11 @@ function showp(e) {
     ctx.canvas.height = theight;
 
     var img = new Image;
-    img.src = URL.createObjectURL(e.target.files[0]);
+    if(phImg){
+        img = loadImage('ironic.jpg', main);
+    } else {
+        img.src = URL.createObjectURL(e.target.files[0]);
+    }
 
     var img1 = loadImage('h01.png', main);
     var img2 = loadImage('f01.png', main);
@@ -244,6 +249,23 @@ function showp(e) {
 
         return img;
     }
+
+
+        if(phTxt && phImg){
+            $('#res_h').append(" (Placeholder text and image used)");
+        } else if(phTxt){
+            $('#res_h').append(" (Placeholder text used)");
+        } else if(phImg){
+            $('#res_h').append(" (Placeholder image used)");
+        }
+
+}
+
+var phTxt;
+var phImg;
+function placeholderImage(){
+        phImg = true;
+        showp();
 }
 
 function savefile() {
@@ -254,6 +276,7 @@ function savefile() {
 }
 
 function placeholderText(){
+    phTxt = true;
     var theTragedy = "Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.";
     $('#title').val("Tragedy of Darth Plagueis The Wise");
     $('#issue_num').val("EP.III ROTS");
