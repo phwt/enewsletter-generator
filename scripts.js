@@ -3,6 +3,12 @@ document.getElementById("issue_num").value = getSavedValue("issue_num");
 document.getElementById("l1").value = getSavedValue("l1");
 document.getElementById("sel_v").value = getSavedValue("sel_v");
 
+// Bootstrap popover initizliation
+$('[data-toggle="popover"]').popover();
+$('.d-inline-block').popover({
+  trigger: 'focus'
+})
+
 var l1 = "";
 var length = 60;
 var flength;
@@ -156,12 +162,12 @@ function prtxt() {
 }
 
 function savei() {
-    $('#imgSelectModal').modal('show');
     var cv = document.getElementById("sel_v").value
     if (cv == "") {
         alert("Please Enter line number.");
     } else {
         f_input.disabled = false;
+        $('#imgSelectModal').modal('show');
     }
 
     var lv = document.getElementById("sel_v").value;
@@ -177,6 +183,7 @@ function showp(e) {
     $('#btn-save').prop('disabled', false);
     $('#btn-save').removeClass("disabled");
     $('#title, #issue_num, #l1, #sel_v, #options > button').prop('disabled', true);
+    $('#imgSelectModal').modal('hide');
     
     var title_r = document.getElementById("title").value;
     var isn_r = document.getElementById("issue_num").value;

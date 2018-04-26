@@ -3,11 +3,10 @@
 <html>
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
     <style>
         @font-face	{
 			font-family: ThaiSansNeue;
@@ -22,7 +21,7 @@
 <body class="container-fluid">
     <div class="row">
         <!-- Left Section -->
-        <div class="col-md-6 left-section">
+        <div class="col-md-6 left-section" style="height:100%">
             <form id="sfl">
                 <br>
                 <h3 class="text-primary">E-Newsletter Generator</h3><hr>
@@ -57,9 +56,6 @@
                     <button class="btn btn-success" onclick="savei()"><i class="fas fas fa-image" >&nbsp;</i>Select Image</button>
                     <button class="btn btn-danger" onclick="clears()"><i class="fas fa-times">&nbsp;</i>Clear Storage/Form</button>
                     <button class="btn btn-secondary" onclick="placeholderText()"><i class="fas fa-file">&nbsp;</i>Fill-in Placeholder Text</button>
-
-
-
                     <br>
                 </div>
             </div>
@@ -98,14 +94,20 @@
             <input type="file" id="f_input">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+<!--             <span class="d-inline-block" data-toggle="popover" data-content="File selection still in experimetal status. Cancel is not available.">
+              <button class="btn btn-danger" style="pointer-events: none;" type="button" disabled><i class="fas fa-times">&nbsp;</i>Cancle</button>
+            </span> -->
+            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times">&nbsp;</i>Cancle</button>
           </div>
         </div>
       </div>
     </div>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
 
 </html>
