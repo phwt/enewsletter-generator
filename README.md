@@ -33,6 +33,7 @@ Clone or download this repo and run `index.html` in any web browser.
  - [Thai Sans Neue](http://www.f0nt.com/release/thaisans-neue-1-0/) - Simple but magnificent font.
  - [Adobe Color CC](https://color.adobe.com) - Provided me a color scheme for placeholder header/footer.
  - [wrapText function](https://github.com/phwt/enewsletter-generator) - Function used for text-wrapping in canvas.
+ - [Bootstrap](https://getbootstrap.com) - There's no beauty in this if without this framework.
 
 ## Release History
  - 2.1 (26-04-18)
