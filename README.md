@@ -38,7 +38,7 @@ Clone or download this repo and run `index.html` in any web browser.
 ## Release History
  - 2.1 (26-04-18)
      - UI Overhaul with Bootstrap.
-         - Remove section header. Pages now divided in 2 sections by left for forms and right for result.
+         - Remove section header. Page will now divided in 2 sections by left for forms and right for result.
          - Move image selection into modal.
      - Remove preview fuction. Text will now preview right when you type it.
      - Add function to fill form with placeholder text and placeholder image. (For developing purpose)
