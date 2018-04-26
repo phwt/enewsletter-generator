@@ -22,7 +22,7 @@ Clone or download this repo and run `index.html` in any web browser.
  - [ ] Change all script to jQuery format
      - [X] Remove all non-project releated file
      - [ ] Replace some contents
- - [ ] Update UI (I'm thinking of using bootstrap)
+ - [X] UI Overhaul with Bootstrap
  - [X] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)
  - [ ] Make variable name easier to understand
  - [ ] Add Comment to explain script
@@ -35,6 +35,15 @@ Clone or download this repo and run `index.html` in any web browser.
  - [wrapText function](https://github.com/phwt/enewsletter-generator) - Function used for text-wrapping in canvas.
 
 ## Release History
+ - 2.1 (26-04-18)
+     - UI Overhaul with Bootstrap.
+         - Remove section header. Pages now divided in 2 sections by left for forms and right for result.
+         - Move image selection into modal.
+     - Remove preview fuction. Text will now preview right when you type it.
+     - Add function to fill form with placeholder text and placeholder image. (For developing purpose)
+         - User will be noticed if placeholder text and/or image is used.
+     - Decrease image height and fix text misalignment.
+     - All fields and options button will be disabled after image is selected.
  - 2.0 (25-04-18)
      - Migration from original project to public version.
          - Change Header/Footer image.
