@@ -144,7 +144,10 @@ $("#btn-save").prop('disabled', true);
 $("#f_input").prop('disabled', true);
 $("#f_input").change(showp);
 
-$("textarea").keyup(prtxt);
+$("textarea").keyup(function() {
+    prtxt();
+    phTxt = false;
+});
 function prtxt() {
     var canvas = document.getElementById("canvas");
     var lk = document.getElementById("lineCount");
