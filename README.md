@@ -26,6 +26,7 @@ Clone or download this repo and run `index.html` in any web browser.
  - [X] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)
  - [ ] Make variable name easier to understand
  - [ ] Add Comment to explain script
+ - [ ] Storage system overhaul
 
 ## Built with
  - [jQuery](https://jquery.com/) - JavaScript library that made my life easier.
@@ -35,7 +36,7 @@ Clone or download this repo and run `index.html` in any web browser.
  - [wrapText function](https://github.com/phwt/enewsletter-generator) - Function used for text-wrapping in canvas.
  - [Bootstrap](https://getbootstrap.com) - There's no beauty in this if without this framework.
 
-## Release History
+## Changelog
  - 2.1 (26-04-18)
      - UI Overhaul with Bootstrap.
          - Remove section header. Page will now divided in 2 sections by left for forms and right for result.
