@@ -41,15 +41,20 @@
 				<label>Content</label>
                 <textarea class="form-control" placeholder="Enter newsletter content here" type="text" rows="10" cols="65" id="l1" onkeyup='saveValue(this);'></textarea>
             </form>
-            <h6>Line count : </h6><i id="lineCount"></i><br><br>
-
-
+            <div class="row">
+                <div class="col-md-10">
+                </div>
+                <div class="col-md-2">
+                    <b class="text-primary">Line count : </b><i id="lineCount">N/A</i>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-1">
-                    <!-- <label>Line(s)</label> -->
+                    <label>Line(s)</label><br>
                     <input class="form-control" placeholder="" type="number" id="sel_v" style="width: 60px;" onkeyup='saveValue(this);'>
                 </div>
                 <div class="col-md-11">
+                    <label>Options</label><br>
                 	<button onclick="prtxt()" class="btn btn-secondary"><i class="fas fa-search">&nbsp;</i>Preview Text</button>
                     <button class="btn btn-success" onclick="savei()"><i class="fas fa-save">&nbsp;</i>Save Info</button>
                     <button class="btn btn-danger" onclick="clears()"><i class="fas fa-times">&nbsp;</i>Clear Storage/Form</button>
