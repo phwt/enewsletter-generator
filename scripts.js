@@ -176,6 +176,7 @@ function savei() {
 function showp(e) {
     $('#btn-save').prop('disabled', false);
     $('#btn-save').removeClass("disabled");
+    $('#title, #issue_num, #l1, #sel_v, #options > button').prop('disabled', true);
     
     var title_r = document.getElementById("title").value;
     var isn_r = document.getElementById("issue_num").value;
