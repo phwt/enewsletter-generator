@@ -51,11 +51,28 @@
                     <label>Line(s)</label><br>
                     <input class="form-control" placeholder="" type="number" id="sel_v" style="width: 60px;" onkeyup='saveValue(this);'>
                 </div>
-                <div class="col-md-11" id="options">
+                <div class="col-md-2">
+                    <label>Production</label><br>
+                    <button class="btn btn-success" onclick="savei()"><i class="fas fas fa-image" >&nbsp;</i>Select Image</button>
+                </div>
+                <div class="col-md-9" id="options">
                     <label>Options</label><br>
                 	<!-- <button onclick="prtxt()" class="btn btn-secondary"><i class="fas fa-search">&nbsp;</i>Preview Text</button> -->
-                    <button class="btn btn-success" onclick="savei()"><i class="fas fas fa-image" >&nbsp;</i>Select Image</button>
+
                     <button class="btn btn-danger" onclick="clears()"><i class="fas fa-times">&nbsp;</i>Clear Storage/Form</button>
+
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary" data-toggle="popover" data-placement="top" title="Enable Autosave for forms" data-content="This feature is always enabled. Toggle switch still in experimetal state.">
+                        <buton name="options" id="option1" autocomplete="off" data-container="body" ><i class="fas fa-save"></i> Autosave</button>
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fas fa-check"></i>&nbsp;
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> <i class="fas fa-times"></i>&nbsp;
+                      </label>
+                    </div>
+
                     <button class="btn btn-secondary" onclick="placeholderText()"><i class="fas fa-file">&nbsp;</i>Fill-in Placeholder Text</button>
                     <br>
                 </div>
