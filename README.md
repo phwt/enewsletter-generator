@@ -5,6 +5,7 @@ JavaScript application use for combining image with text and generate it as imag
 ## Features
 - Create E-Newsletter without any graphic-editing software nor graphical skill.
 - Simple UI and easy to use.
+- No application needed just run in browser. (And even works in mobile!)
 - Save your entered info on every keydown. Never lose your info by just single [F5] button again.
 
 ## How to use
