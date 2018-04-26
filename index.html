@@ -26,7 +26,7 @@
             <form id="sfl">
                 <br>
                 <h3 class="text-primary">E-Newsletter Generator</h3><hr>
-                <h5>1. Fill title and Issue number</h5>
+                <h5>1. Fill in the required information</h5>
                 <hr>
                 <div class="row">
                     <div class="col">
@@ -37,9 +37,8 @@
                         <label>Issue num.</label>
                         <input type="text" id="issue_num" class="form-control" placeholder="112/2018" onkeyup='saveValue(this);'>
                     </div>
-                </div><br><br>
-                <h5>2. Fill content select lines and save info</h5>
-                <hr>
+                </div><br>
+				<label>Content</label>
                 <textarea class="form-control" placeholder="Enter newsletter content here" type="text" rows="10" cols="65" id="l1" onkeyup='saveValue(this);'></textarea>
             </form>
             <h6>Line count : </h6><i id="lineCount"></i><br><br>
@@ -52,12 +51,12 @@
                 </div>
                 <div class="col-md-11">
                 	<button onclick="prtxt()" class="btn btn-secondary"><i class="fas fa-search">&nbsp;</i>Preview Text</button>
-                    <button class="btn btn-secondary" onclick="savei()"><i class="fas fa-save">&nbsp;</i>Save Info</button>
+                    <button class="btn btn-success" onclick="savei()"><i class="fas fa-save">&nbsp;</i>Save Info</button>
                     <button class="btn btn-danger" onclick="clears()"><i class="fas fa-times">&nbsp;</i>Clear Storage/Form</button><br>
                 </div>
             </div>
             <br><br>
-            <h5>3. Select image (600x400)</h5>
+            <h5>2. Select image (600x400)</h5>
             <hr>
             <div style="font-family: ThaiSansNeue;font-size:1px;">.</div>
             <input type="file" id="f_input">
@@ -66,9 +65,15 @@
         <!-- Right Section -->
         <div class="col-md-6">
         	<br>
-            <h5>4. Result</h5>
-            <hr>
-            <button class="btn btn-success" onclick="savefile()"><i class="fas fa-arrow-down">&nbsp;</i>Save</button><br><br>
+        	<div class="row">
+        		<div class="col-md-10">
+            		<h5>3. Result</h5>
+            	</div>
+        		<div class="col-md-2">
+            		<button class="btn btn-success disabled" id="btn-save" onclick="savefile()"><i class="fas fa-arrow-down">&nbsp;</i>Save</button>
+        		</div>
+        	</div>
+            <hr><br>
         	<canvas width="784" height="500" id="canvas"></canvas>
         </div>
     </div>
