@@ -1,42 +1,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <html>
-	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<head>
-	<style>
-		@font-face {
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <style>
+        @font-face	{
 			font-family: ThaiSansNeue;
-			src: url("ThaiSansNeue-Regular.otf");
+        	src: url("ThaiSansNeue-Regular.otf");
 		}
-	</style>
-	</head>
-    <body style="font-family:Browallia New;font-size:20px;">
-		<form id="sfl">
-			<p>&nbsp;➀ Fill title and Issue number</p>
-			Title <input type="text" id="title" onkeyup='saveValue(this);'></input>
-			Issue <input type="text" id="issue_num" size="4" value="" onkeyup='saveValue(this);'></input>
-			<br>
-			<hr>
-			<p>&nbsp;➁ Fill content select lines and save info</p>
-			<textarea type="text" rows="10" cols="65" id="l1"onkeyup='saveValue(this);'></textarea>
-		</form>
-		<button onclick="prtxt()">Preview Text</button> <b>Line count : </b><i id="lineCount"></i><br><br>
-		Line(s) - 
-		<input type="number" id="sel_v" style="width: 40px;" onkeyup='saveValue(this);'></input>
-		<button onclick="savei()">Save Info</button>
-		<button onclick="clears()">Clear Storage/Form</button><br>
-		<hr>
-		<p>&nbsp;③ Select image (600x400)</p>
-		<div style="font-family: ThaiSansNeue;font-size:1px;">.</div>
-		<input type="file" id="f_input">
-		<hr>
-		<p>&nbsp;④ Result</p>
-		<button onclick="savefile()">Save</button><br>
-        <canvas width="784" height="1000" id="canvas"></canvas>
-    </body>
-	<script src="scripts.js"></script>
+		.left-section {
+  			border-right: 1px solid #e5e5e5;
+		}
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="row">
+        <!-- Left Section -->
+        <div class="col-md-6 left-section">
+            <form id="sfl">
+                <br>
+                <h5>1. Fill title and Issue number</h5>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <label>Title</label>
+                        <input type="text" id="title" class="form-control" placeholder="Enter Title here" onkeyup='saveValue(this);'>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Issue num.</label>
+                        <input type="text" id="issue_num" class="form-control" placeholder="112/2018" onkeyup='saveValue(this);'>
+                    </div>
+                </div><br>
+                <h5>2. Fill content select lines and save info</h5>
+                <hr>
+                <textarea class="form-control" placeholder="Enter newsletter content here" type="text" rows="10" cols="65" id="l1" onkeyup='saveValue(this);'></textarea>
+            </form>
+            <h6>Line count : </h6><i id="lineCount"></i><br><br>
+
+
+            <div class="row">
+                <div class="col-md-1">
+                    <!-- <label>Line(s)</label> -->
+                    <input class="form-control" placeholder="" type="number" id="sel_v" style="width: 60px;" onkeyup='saveValue(this);'>
+                </div>
+                <div class="col-md-11">
+                	<button onclick="prtxt()" class="btn btn-secondary"><i class="fas fa-search">&nbsp;</i>Preview Text</button>
+                    <button class="btn btn-secondary" onclick="savei()"><i class="fas fa-save">&nbsp;</i>Save Info</button>
+                    <button class="btn btn-danger" onclick="clears()"><i class="fas fa-times">&nbsp;</i>Clear Storage/Form</button><br>
+                </div>
+            </div>
+
+            <hr>
+            <h5>3. Select image (600x400)</h5>
+            <hr>
+            <div style="font-family: ThaiSansNeue;font-size:1px;">.</div>
+            <input type="file" id="f_input">
+            <hr>
+            <h5>4. Result</h5>
+            <hr>
+            <button class="btn btn-success" onclick="savefile()"><i class="fas fa-arrow-down">&nbsp;</i>Save</button><br>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-md-6">
+        	<canvas width="784" height="1000" id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+
 </html>
