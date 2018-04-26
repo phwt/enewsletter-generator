@@ -25,6 +25,7 @@
         <div class="col-md-6 left-section">
             <form id="sfl">
                 <br>
+                <h3 class="text-primary">E-Newsletter Generator</h3><hr>
                 <h5>1. Fill title and Issue number</h5>
                 <hr>
                 <div class="row">
@@ -36,7 +37,7 @@
                         <label>Issue num.</label>
                         <input type="text" id="issue_num" class="form-control" placeholder="112/2018" onkeyup='saveValue(this);'>
                     </div>
-                </div><br>
+                </div><br><br>
                 <h5>2. Fill content select lines and save info</h5>
                 <hr>
                 <textarea class="form-control" placeholder="Enter newsletter content here" type="text" rows="10" cols="65" id="l1" onkeyup='saveValue(this);'></textarea>
@@ -55,21 +56,20 @@
                     <button class="btn btn-danger" onclick="clears()"><i class="fas fa-times">&nbsp;</i>Clear Storage/Form</button><br>
                 </div>
             </div>
-
-            <hr>
+            <br><br>
             <h5>3. Select image (600x400)</h5>
             <hr>
             <div style="font-family: ThaiSansNeue;font-size:1px;">.</div>
             <input type="file" id="f_input">
-            <hr>
-            <h5>4. Result</h5>
-            <hr>
-            <button class="btn btn-success" onclick="savefile()"><i class="fas fa-arrow-down">&nbsp;</i>Save</button><br>
         </div>
 
         <!-- Right Section -->
         <div class="col-md-6">
-        	<canvas width="784" height="1000" id="canvas"></canvas>
+        	<br>
+            <h5>4. Result</h5>
+            <hr>
+            <button class="btn btn-success" onclick="savefile()"><i class="fas fa-arrow-down">&nbsp;</i>Save</button><br><br>
+        	<canvas width="784" height="500" id="canvas"></canvas>
         </div>
     </div>
 </body>

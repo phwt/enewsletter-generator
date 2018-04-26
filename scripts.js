@@ -159,7 +159,7 @@ function savei() {
 
     var cv = document.getElementById("sel_v").value
     if (cv == "") {
-        alert("ss");
+        alert("Please Enter line number.");
     } else {
         f_input.disabled = false;
     }
@@ -202,11 +202,11 @@ function showp(e) {
 
             ctx.font = 'bold italic 16px Myriad Pro';
             ctx.fillStyle = '#572706';
-            ctx.fillText(isn_r, 707, 267);
+            ctx.fillText(isn_r, 707, 175);
 
             ctx.font = '47px ThaiSansNeue';
             ctx.textAlign = 'center';
-            ctx.fillText(title_r, 392, 324);
+            ctx.fillText(title_r, 392, 228);
 
             ctx.drawImage(img, 93, 366);
 
