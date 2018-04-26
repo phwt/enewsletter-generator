@@ -149,7 +149,7 @@ function prtxt() {
     l1 = "     " + l1;
     ctx.font = '25px ThaiSansNeue';
     ctx.textAlign = 'left';
-    ctx.fillStyle = '#1d6495';
+    ctx.fillStyle = '#0a1c28';
     wrapText(ctx, l1, 50, 50, 700, 30);
     lk.innerHTML = lineCount_k;
     lv.value = lineCount_k;
@@ -165,7 +165,6 @@ function savei() {
     }
 
     var lv = document.getElementById("sel_v").value;
-
 
     for (i = 1; i < lv; i += 1) {
         length = length + 30;
@@ -203,8 +202,8 @@ function showp(e) {
             //ctx.globalAlpha = 0.5;
             ctx.drawImage(img2, 0, flength);
 
-            ctx.font = 'bold italic 16px Myriad Pro';
-            ctx.fillStyle = '#572706';
+            ctx.font = 'bold 16px Myriad Pro';
+            ctx.fillStyle = '#0a1c28';
             ctx.fillText(isn_r, 707, 175);
 
             ctx.font = '47px ThaiSansNeue';
@@ -216,7 +215,7 @@ function showp(e) {
             l1 = "     " + l1;
             ctx.font = '25px ThaiSansNeue';
             ctx.textAlign = 'left';
-            ctx.fillStyle = '#1d6495';
+            ctx.fillStyle = '#0a1c28';
             wrapText(ctx, l1, 46, 768, 700, 30);
 
             ctx.beginPath();
@@ -244,4 +243,11 @@ function savefile() {
     var isn_rn = isn_r.replace("/", "-");
     var filename = "issue_" + isn_rn;
     saveAsPNG(canvas, filename);
+}
+
+function placeholderText(){
+    var theTragedy = "Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.";
+    $('#title').val("Tragedy of Darth Plagueis The Wise");
+    $('#issue_num').val("EP.III ROTS");
+    $('#l1').val(theTragedy);
 }
