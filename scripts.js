@@ -156,7 +156,7 @@ function prtxt() {
 }
 
 function savei() {
-
+    $('#imgSelectModal').modal('show');
     var cv = document.getElementById("sel_v").value
     if (cv == "") {
         alert("Please Enter line number.");

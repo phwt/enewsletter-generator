@@ -26,8 +26,6 @@
             <form id="sfl">
                 <br>
                 <h3 class="text-primary">E-Newsletter Generator</h3><hr>
-                <h5>1. Fill in the required information</h5>
-                <hr>
                 <div class="row">
                     <div class="col">
                         <label>Title</label>
@@ -56,17 +54,17 @@
                 <div class="col-md-11" id="options">
                     <label>Options</label><br>
                 	<!-- <button onclick="prtxt()" class="btn btn-secondary"><i class="fas fa-search">&nbsp;</i>Preview Text</button> -->
-                    <button class="btn btn-success" onclick="savei()"><i class="fas fa-save">&nbsp;</i>Save Info</button>
+                    <button class="btn btn-success" onclick="savei()"><i class="fas fas fa-image" >&nbsp;</i>Select Image</button>
                     <button class="btn btn-danger" onclick="clears()"><i class="fas fa-times">&nbsp;</i>Clear Storage/Form</button>
                     <button class="btn btn-secondary" onclick="placeholderText()"><i class="fas fa-file">&nbsp;</i>Fill-in Placeholder Text</button>
+
+
+
                     <br>
                 </div>
             </div>
-            <br><br>
-            <h5>2. Select image (600x400)</h5>
-            <hr>
-            <div style="font-family: ThaiSansNeue;font-size:1px;">.</div>
-            <input type="file" id="f_input">
+            <br>
+            <!-- <label>Featured image (600x400)</label><br> -->
         </div>
 
         <!-- Right Section -->
@@ -74,16 +72,39 @@
         	<br>
         	<div class="row">
         		<div class="col-md-10">
-            		<h5>3. Result</h5>
+            		<h5>Result</h5>
             	</div>
         		<div class="col-md-2">
             		<button class="btn btn-success disabled" id="btn-save" onclick="savefile()"><i class="fas fa-arrow-down">&nbsp;</i>Save</button>
         		</div>
         	</div>
             <hr><br>
+            <!-- Font intialization -->
+            <div style="font-family: ThaiSansNeue;font-size:1px;">.</div>
         	<canvas width="784" height="500" id="canvas"></canvas>
         </div>
     </div>
+
+    <div class="modal fade" id="imgSelectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Select Image file (600x400)</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input type="file" id="f_input">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </body>
 <script src="scripts.js"></script>
 
