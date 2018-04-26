@@ -169,7 +169,7 @@ function savei() {
 
     for (i = 1; i < lv; i += 1) {
         length = length + 30;
-        flength = length + 805;
+        flength = length + 755;
     }
     theight = flength + 106;
 }
@@ -211,16 +211,16 @@ function showp(e) {
             ctx.textAlign = 'center';
             ctx.fillText(title_r, 392, 228);
 
-            ctx.drawImage(img, 93, 366);
+            ctx.drawImage(img, 93, 296);
 
             l1 = "     " + l1;
             ctx.font = '25px ThaiSansNeue';
             ctx.textAlign = 'left';
             ctx.fillStyle = '#1d6495';
-            wrapText(ctx, l1, 46, 813, 700, 30);
+            wrapText(ctx, l1, 46, 768, 700, 30);
 
             ctx.beginPath();
-            ctx.rect(16, 775, 750, length);
+            ctx.rect(16, 731, 750, length);
             ctx.globalAlpha = 0.03;
             ctx.fillStyle = "black";
             ctx.fill();
