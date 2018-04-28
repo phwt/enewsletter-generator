@@ -28,6 +28,7 @@ Clone or download this repo and run `index.html` in any web browser.
  - [ ] Make variable name easier to understand
  - [ ] Add Comment to explain script
  - [ ] Storage system overhaul
+ - [ ] Make height and width variable responsive to input header amd footer image.
 
 ## Built with
  - [jQuery](https://jquery.com/) - JavaScript library that made my life easier.
