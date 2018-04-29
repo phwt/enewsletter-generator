@@ -19,7 +19,7 @@ Clone or download this repo and run `index.html` in any web browser.
      - [X] Add text-wrapper
      - [X] Add line count
      - [X] Add custom line number
- - [ ] Full Migration from Legacy version
+ - [X] Full Migration from Legacy version
  - [ ] Change all script to jQuery format
      - [X] Remove all non-project releated file
      - [ ] Replace some contents
