@@ -10,7 +10,7 @@ JavaScript application use for combining image with text and generate it as imag
 
 ## How to use
 
-Clone or download this repo and run `index.html` in any web browser. (Works locally no web-server requried.)
+Clone or download this repo and run `index.html` in any web browser. (Works locally no web-server required.)
 
 ## To-do list
  - [ ] Change all script to jQuery format
