@@ -14,7 +14,7 @@ Clone or download this repo and run `index.html` in any web browser.
 
 ## To-do list
  - [ ] Change all script to jQuery format
-     - [X] Remove all non-project releated file
+     - [X] ~~Remove all non-project releated file~~
      - [ ] Replace some contents
   - [ ] Make variable name easier to understand
  - [ ] Add Comment to explain script
