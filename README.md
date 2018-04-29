@@ -13,22 +13,22 @@ JavaScript application use for combining image with text and generate it as imag
 Clone or download this repo and run `index.html` in any web browser.
 
 ## To-do list
- - [X] Create a project
+ - [ ] Change all script to jQuery format
+     - [X] Remove all non-project releated file
+     - [ ] Replace some contents
+  - [ ] Make variable name easier to understand
+ - [ ] Add Comment to explain script
+ - [ ] Storage system overhaul
+ - [ ] Make height and width variable responsive to input header and footer image.
+ - [X] ~~Create a project
  - [X] Finish the (working version) project
  - [X] Legacy Version to do:
      - [X] Add text-wrapper
      - [X] Add line count
      - [X] Add custom line number
  - [X] Full Migration from Legacy version
- - [ ] Change all script to jQuery format
-     - [X] Remove all non-project releated file
-     - [ ] Replace some contents
  - [X] UI Overhaul with Bootstrap
- - [X] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)
- - [ ] Make variable name easier to understand
- - [ ] Add Comment to explain script
- - [ ] Storage system overhaul
- - [ ] Make height and width variable responsive to input header and footer image.
+ - [X] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)~~
 
 ## Built with
  - [jQuery](https://jquery.com/) - JavaScript library that made my life easier.
