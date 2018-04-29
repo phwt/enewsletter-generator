@@ -20,15 +20,15 @@ Clone or download this repo and run `index.html` in any web browser.
  - [ ] Add Comment to explain script
  - [ ] Storage system overhaul
  - [ ] Make height and width variable responsive to input header and footer image.
- - [X] ~~Create a project
- - [X] Finish the (working version) project
- - [X] Legacy Version to do:
-     - [X] Add text-wrapper
-     - [X] Add line count
-     - [X] Add custom line number
- - [X] Full Migration from Legacy version
- - [X] UI Overhaul with Bootstrap
- - [X] Seperate JavaScript from html file (All scripts is currently in script tag inside html file)~~
+ - [X] ~~Create a project~~
+ - [X] ~~Finish the (working version) project~~
+ - [X] ~~Legacy Version to do:~~
+     - [X] ~~Add text-wrapper~~
+     - [X] ~~Add line count~~
+     - [X] ~~Add custom line number~~
+ - [X] ~~Full Migration from Legacy version~~
+ - [X] ~~UI Overhaul with Bootstrap~~
+ - [X] ~~Seperate JavaScript from html file (All scripts is currently in script tag inside html file)~~
 
 ## Built with
  - [jQuery](https://jquery.com/) - JavaScript library that made my life easier.
