@@ -198,13 +198,13 @@ function showp(e) {
 
     var img = new Image;
     if(phImg){
-        img = loadImage('ironic.jpg', main);
+        img = loadImage('assets/ironic.jpg', main);
     } else {
         img.src = URL.createObjectURL(e.target.files[0]);
     }
 
-    var img1 = loadImage('h01.png', main);
-    var img2 = loadImage('f01.png', main);
+    var img1 = loadImage('assets/h01.png', main);
+    var img2 = loadImage('assets/f01.png', main);
 
     var imagesLoaded = 0;
 
