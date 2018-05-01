@@ -38,6 +38,9 @@ Clone or download this repo and run `index.html` in any web browser. (Works loca
  - [wrapText function](https://github.com/phwt/enewsletter-generator) - Function used for text-wrapping in canvas.
  - [Bootstrap](https://getbootstrap.com) - There's no beauty in this if without this framework.
 
+## Known Issue(s)
+ - In some instance the selected image not displaying in result.
+
 ## Changelog
  - 2.1 (26-04-18)
      - UI Overhaul with Bootstrap.
