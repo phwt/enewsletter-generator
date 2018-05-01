@@ -105,7 +105,7 @@ function wrapText(context, text, x, y, maxWidth, lineHeight) {
             lineCount++;
             lineCount_k = lineCount + 1;
             lv = lineCount;
-            console.log(lineCount_k);
+            // console.log(lineCount_k);
         } else {
             line = test;
         }
