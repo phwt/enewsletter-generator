@@ -146,6 +146,8 @@ $("textarea").keyup(function() {
     prtxt();
     phTxt = false;
 });
+
+//text preview function
 function prtxt() {
     var canvas = document.getElementById("canvas");
     var lk = document.getElementById("lineCount");
@@ -162,6 +164,7 @@ function prtxt() {
     lv.value = lineCount_k;
 }
 
+//save user entered text
 function savei() {
     var cv = document.getElementById("sel_v").value
     if (cv == "") {
@@ -181,7 +184,10 @@ function savei() {
 }
 
 var placeholder;
+
+//image generating process
 function showp(e) {
+    //disable input and button
     $('#btn-save').prop('disabled', false);
     $('#btn-save').removeClass("disabled");
     $('#title, #issue_num, #l1, #sel_v, #options > button').prop('disabled', true);
