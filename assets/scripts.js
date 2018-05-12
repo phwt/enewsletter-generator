@@ -1,7 +1,12 @@
-document.getElementById("title").value = getSavedValue("title");
-document.getElementById("issue_num").value = getSavedValue("issue_num");
-document.getElementById("l1").value = getSavedValue("l1");
-document.getElementById("sel_v").value = getSavedValue("sel_v");
+$('#title').val(getSavedValue("title"));
+$('#issue_num').val(getSavedValue("issue_num"));
+$('#l1').val(getSavedValue("l1"));
+$('#sel_v').val(getSavedValue("sel_v"));
+
+// document.getElementById("title").value = getSavedValue("title");
+// document.getElementById("issue_num").value = getSavedValue("issue_num");
+// document.getElementById("l1").value = getSavedValue("l1");
+// document.getElementById("sel_v").value = getSavedValue("sel_v");
 
 // Bootstrap popover initizliation
 $('[data-toggle="popover"]').popover();
@@ -14,8 +19,6 @@ var length = 60;
 var flength;
 var theight;
 var lv;
-
-
 var lineCount_k;
 
 function saveAsPNG(image, filename) { // No IE <11 support. Chrome URL bug for large images may crash
