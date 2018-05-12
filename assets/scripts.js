@@ -293,12 +293,42 @@ function placeholderText(){
     prtxt();
 }
 
-// $( "#save_on, #save_off, #option1" ).click(function() {
-//   saveToggle();
-// });
+$( "#btn-autosave" ).click(function() {
+  // if (localStorage.auto == true){
+  //   localStorage.auto == false;
+  // } else {
+  //   localStorage.auto == true;
+  // }
+  saveToggle();
+});
+// saveToggle();
 
-function saveToggle(){
+if(localStorage.auto == undefined){
+        localStorage.auto == true;
+} else {}
+
+  if (localStorage.auto == 'true'){
     $('#autoStatus').text('Enabled');
+  } else if(localStorage.auto == 'false') {
+    $('#autoStatus').text('Disabled');
+  }
+
+// var autoStatus = localStorage.auto;
+function saveToggle(){
+    // autoStatus.auto;
+
+  if (localStorage.auto == 'true'){
+    localStorage.auto == false;
+    $('#autoStatus').text('Disabled');
+    console.log('disabled');
+  } else if(localStorage.auto == 'false') {
+    localStorage.auto == true;
+    $('#autoStatus').text('Enabled');
+    console.log('enabled');
+  }
+
+    // if(localStorage.auto == true)
+    // $('#autoStatus').text('Enabled');
     // $('#save_on').val + $('#save_off').val;
     // if($('#save_on:checked').val() == 'on'){
     //     $('#save_status').text('(Save : On)');
