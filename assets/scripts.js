@@ -292,3 +292,16 @@ function placeholderText(){
     $('#l1').val(theTragedy);
     prtxt();
 }
+
+$( "#save_on, #save_off, #option1" ).click(function() {
+  saveToggle();
+});
+
+function saveToggle(){
+    // $('#save_on').val + $('#save_off').val;
+    if($('#save_on:checked').val() == 'on'){
+        $('#save_status').text('(Save : On)');
+    } else if($('#save_off:checked').val() == 'on'){
+        $('#save_status').text('(Save : Off)');
+    }
+}
