@@ -190,7 +190,7 @@ function showp(e) {
     //disable input and button
     $('#btn-save').prop('disabled', false);
     $('#btn-save').removeClass("disabled");
-    $('#title, #issue_num, #l1, #sel_v, #options > button').prop('disabled', true);
+    $('#title, #issue_num, #l1, #sel_v, #options > button, .btn-img').prop('disabled', true);
     $('#imgSelectModal').modal('hide');
     
     var title_r = document.getElementById("title").value;
