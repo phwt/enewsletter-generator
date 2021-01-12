@@ -31,12 +31,14 @@ Clone or download this repo and run `index.html` in any web browser. (Works loca
  - [X] ~~Seperate JavaScript from html file (All scripts is currently in script tag inside html file)~~
 
 ## Built with
- - [jQuery](https://jquery.com/) - JavaScript library that made my life easier.
- - [Notepad++](https://notepad-plus-plus.org/) - My favorite text-editor.
- - [Thai Sans Neue](http://www.f0nt.com/release/thaisans-neue-1-0/) - Simple but magnificent font.
- - [Adobe Color CC](https://color.adobe.com) - Provided me a color scheme for placeholder header/footer.
- - [wrapText function](https://github.com/phwt/enewsletter-generator) - Function used for text-wrapping in canvas.
- - [Bootstrap](https://getbootstrap.com) - There's no beauty in this if without this framework.
+
+ - Technology
+   - JavaScript
+   - [jQuery](https://jquery.com/)
+   - [Bootstrap](https://getbootstrap.com)
+ - Assets
+   - [Thai Sans Neue](http://www.f0nt.com/release/thaisans-neue-1-0/)
+
 
 ## Known Issue(s)
  - In some instance the selected image not displaying in result.
